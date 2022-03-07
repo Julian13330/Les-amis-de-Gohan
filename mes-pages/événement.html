@@ -54,34 +54,45 @@
       </div>
     </nav>
   </header>
-  <main> 
-    <section class="row">
-      <aside class="card col-3 col-md-2"> 
-        <div class=" card-body h-100 row justify-content-center align-items-center"> 
-          <h5 class="card-title"> Votre contribution </h5>
+  <main class="container-fullwidth">
+    <div class="row" style="padding: 40px">
+      <!-- Je crée le formulaire d'inscription à l'évènement côté gauche -->
+      <section class="card col-6">
+        <div class="card-body h-100 row justify-content-center align-items-center"> 
+          <h5 class="card-title text-center"> Formulaire d'inscription à l'évènement </h5>
+          <div class="mb-3"> 
+            <input class="form-control" type="text" placeholder="Nom" aria-label="Nom">
+          </div>
+            <div class="mb-3"> 
+              <input class="form-control" type="text" placeholder="Prénom" aria-label="Prénom">
+          </div>
+          <div class="mb-3">
+            <label for="adremail" class="form-label">Votre adresse e-mail</label>
+            <input type="email" class="form-control" id="adremail" placeholder="Nom@exemple.com">
+          </div>
+          <div class="mb-3"> 
+            <input class="form-control" type="text" placeholder="Nombre d'invité(s)" aria-label="Invité">
+          </div>
+          <div class="mb-3"> 
+            <input class="form-control" type="text" placeholder="Age" aria-label="Age">
+          </div>
+         <button type="button" class="btn btn-primary border-dark mb-3">Envoyer</button> 
         </div>
-      </aside>
-      <article class="card bg-primary text-white col-9">
-        <div class="card-body">
-          <h5 class="card-title"> Journée nationale de l'adoption des animaux de compagnie </h5>
-          <img src="../Photos/nationalday2.jpg" class="card-img-top" alt="...">
-          <p> Nous fêtons le 15 septembre la journée de l'adoption en France au refuge. Une kermess est organisée pour
+      </section>
+      <!-- Visuel et explication pour l'évènement côté droit -->
+      <section class="card col-6">
+        <div class="card-body"> 
+          <img src="../Photos/nationalday2.jpg" class="card-img" alt="...">
+          <h5 class="card-title text-center"> Journée nationale de l'adoption des animaux de compagnie </h5>
+          <p class="text-center"> Nous fêtons le 15 septembre la journée de l'adoption en France au refuge. Une kermess est organisée pour
           récolter des fonds nécessaires pour développer notre refufe afin d'accueillir plus de chiens dans le besoin.
-          </p> <br></br> <p>Ci-dessous l'inscription pour votre présence à la kermess du 15 septembre</p>
-        </div>  
-      </article>
-      <article class="row"> 
-        <div class="card col-3 col-md-2">
+          </p>
         </div>
-        <div class="card col-9 bg-secondary">
-          Formulaire d'inscription pour la kermesse
-        </div>
-        </div>
-      </article>
-    </section>
+      </section>
+    </div>
   </main>
-  <footer> 
-    Nous contacter
+  <footer class="footeven"> 
+   <a href="nous_contacter.html" class="text-white">Nous contacter </a>
   </footer>
   <!-- Script Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
