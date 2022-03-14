@@ -5,17 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Les amis de Gohan</title>
-	<meta name="description" content="Nous sommes un refuge pour chiens que nous vous proposons 
-  d'adopter">
+	<meta name="description" content="Nous sommes un refuge pour chiens que nous vous proposon d'adopter">
 	<link rel="stylesheet" href="style.css">
 	<!-- Bootstrap CSS only -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+	 crossorigin="anonymous">
 
 	</script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-  rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	 crossorigin="anonymous">
 </head>
 
@@ -25,8 +22,8 @@ crossorigin="anonymous">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img src="Photos/logo_chiengo.PNG" alt="logo" width="50" height="50" href="index.html">
-            Les amis de Gohan</a>
+					<img src="Photos/logo_chiengo.PNG" alt="logo" width="50" height="50">
+      Les amis de Gohan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,27 +33,25 @@ crossorigin="anonymous">
                   <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Sections/notre_histoire.html">Notre histoire</a>
+                  <a class="nav-link" href="#">Notre histoire</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Sections/adopter.html">Adopter</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Sections/événement.html">Evénement</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Sections/nous_contacter.html">Nous contacter</a>
+                  <a class="nav-link" href="#">Nous contacter</a>
                 </li>
               </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
       </div>
     </nav>
   </header>
-<main>
+<body>
+  <main>
     <div class="container"> 
         <div class="row">
           <aside class="col-12 shadow-lg p-3 mb-5 bg-body rounded"> 
@@ -67,17 +62,14 @@ crossorigin="anonymous">
     </div>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" 
-        class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria- 
-        label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria- 
-         label="Slide 3"></button>
-      </div>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
    <!-- Carousel pour représenter le thème du site en 3 photos -->     
   <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="Photos/photo_chien1.jpg" class="img-responsive d-block w-100" alt="...">
+      <img src="Photos/photo chien1.jpg" class="img-responsive d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="Photos/photochien2.png" class="img-responsive d-block w-100" alt="...">
@@ -100,7 +92,7 @@ crossorigin="anonymous">
       <div class="col-6">
         <img src="Photos/Photo_niche_chien_site.jpg" class="card-img-top" alt="...">
       </div>
-    </div>
+      </div>
     <!-- Création d'une carte pour demander un don -->  
     <div class="card">
       <div class="card-body">
@@ -109,23 +101,22 @@ crossorigin="anonymous">
          <a href="#" class="btn btn-primary">Je souhaite faire un don</a>
       </div>
       <div class="progress">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
-aria-valuenow="110" aria-valuemin="0" aria-valuemax="300" style="width: 75%">110/300</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="110" aria-valuemin="0" aria-valuemax="300" style="width: 75%">110/300</div>
      </div>
     </div>
   </div>
-</main>
-  <footer> 
+  </main>
+  <footer class="row" style="background-color:lightgreen;"> 
     Nous contacter
   </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>
