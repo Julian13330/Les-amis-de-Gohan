@@ -22,18 +22,19 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="../index.html">
-					<img src="../Photos/logo_chiengo.PNG" alt="logo" width="50" height="50">
+					<img src="../dossier-images/logo_chiengo.PNG" alt="logo" width="50" height="50">
             Les amis de Gohan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Les différentes pages du site -->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link"href="../index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="Sections/notre_histoire.html">Notre histoire</a>
+                  <a class="nav-link active" aria-current="page" href="mes-pages/notre_histoire.html">Notre histoire</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="adopter.html">Adopter</a>
@@ -58,6 +59,7 @@
     <h1>Notre histoire</h1>
     <!-- Création via Bootstrap d'un accordéon pour présenter l'histoire du refuge -->
     <div class="accordion accordion-flush" id="accordionFlushExampl">
+      <!-- Accordéon numéro 1 : 2015 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-  expanded="false" aria-controls="flush-collapseOne">
@@ -70,6 +72,7 @@
           </div>
         </div>
       </div>
+      <!-- Accordéon numéro 2 : 2017 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -77,9 +80,10 @@
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">L'histoire fût malheuresement courte car en 2017 Gohan décède à cause à de multiples problèmes de santé déclenché par une attaque cardiaque en vacance à la montagne.</div>
+          <div class="accordion-body">L'histoire fût malheuresement courte car en 2017 Gohan décède à cause à de multiples problèmes de santé déclenchés par une attaque cardiaque en vacance à la montagne.</div>
         </div>
       </div>
+      <!-- Accordéon numéro 3 : 2018 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -87,13 +91,13 @@
           </button>
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Afin de rendre hommage à notre amis adoré, nous avons souhaité ouvrir un refuge pouvant accueillir des chiens en situations physiques et mentales entamés afin de les soignés et de pouvoir si possible leur trouver une famille.</div>
+          <div class="accordion-body">Afin de rendre hommage à notre amis adoré, nous avons souhaité ouvrir un refuge pouvant accueillir des chiens abandonnés afin de les soigner et de pouvoir leur trouver une famille.</div>
         </div>
       </div>
     </div>
   </main>
-  <footer> 
-    Nous contacter
+  <footer class="fixed-bottom"> 
+    <a href="nous_contacter.html" class="text-white">Nous contacter </a>
   </footer>
   <!-- Script Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

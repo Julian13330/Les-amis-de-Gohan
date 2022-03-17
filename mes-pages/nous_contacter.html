@@ -24,12 +24,13 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="../index.html">
-					<img src="../Photos/logo_chiengo.PNG" alt="logo" width="50" height="50">
+					<img src="../dossier-images/logo_chiengo.PNG" alt="logo" width="50" height="50">
             Les amis de Gohan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Les différentes pages du site -->
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
@@ -44,7 +45,7 @@
                   <a class="nav-link" href="événement.html">Evénement</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="Sections/nous_contacter.html">Nous contacter</a>
+                  <a class="nav-link" href="mes-pages/nous_contacter.html">Nous contacter</a>
                 </li>
               </ul>
                 <form class="d-flex">
@@ -57,11 +58,12 @@
     </nav>
   </header>
   <main class="container-fluid">
-     <!-- Formulaire de contact -->
+      <!-- Formulaire de contact -->
       <form class="col p-2">
         <div class="card mb-3">
             <div class="card-body">
               <h5 class="card-title text-center">Nous contacter :</h5>
+              <!-- Civilité -->
                 <div class="mb-3"> 
                   <select class="form-select" aria-label="Default select example">
                     <option selected> Civilité </option> 
@@ -69,20 +71,25 @@
                     <option value="2">Madame</option>
                   </select>
                 </div>
+                <!-- Nom -->
                 <div class="mb-3"> 
                   <input class="form-control" type="text" placeholder="Nom" aria-label="Nom">
                 </div>
+                <!-- Prénom -->
                 <div class="mb-3"> 
                   <input class="form-control" type="text" placeholder="Prénom" aria-label="Prénom">
                 </div>
+                <!-- Numéro de téléphone -->
                 <div class="mb-3"> 
                   <label for="telephone" class="form-label"> Téléphone</label>
                   <input class="form-control" type="text" value="+33" aria-label="Téléphone" id="telephone">
                 </div>
+                <!-- Adresse e-mail -->
                 <div class="mb-3">
                   <label for="adremail" class="form-label">Votre adresse e-mail</label>
                   <input type="email" class="form-control" id="adremail" placeholder="nom@exemple.com">
                 </div>
+                <!-- Les commentaires -->
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Commentaires</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
