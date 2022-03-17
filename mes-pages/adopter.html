@@ -1,15 +1,15 @@
 <!DOCTYPE html>
+<!-- Balisage des microdonnées ajouté par l'outil d'aide au balisage de données structurées de Google -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Voici nos chiens que vous pouvez adopter">
 	<title>Adopter un chien</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
   	<!-- Bootstrap CSS only -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 crossorigin="anonymous">
-
 	</script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	 crossorigin="anonymous">
@@ -21,12 +21,13 @@ crossorigin="anonymous">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="../index.html">
-					<img src="../Photos/logo_chiengo.PNG" alt="logo" width="50" height="50">
+					<img src="../dossier-images/logo_chiengo.PNG" alt="logo" width="50" height="50">
             Les amis de Gohan</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Les différentes pages du site -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Accueil</a>
@@ -57,72 +58,114 @@ crossorigin="anonymous">
     <nav class="row"> 
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
-          <div class="card text-white bg-primary border-dark mb-3">
-            <img src="../Photos/chien_à_adopter/chien1.jpg" class="card-img-top" alt="...">
+          <div itemscope itemtype="http://schema.org/Product" class="card text-white bg-primary border-dark mb-3">
+            <img itemprop="image" src="../dossier-images/chien_à_adopter/chien1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Icetea</h5>
-                  <p class="card-text">Moi mon nom c'est Icetea, j'ai 8 ans, j'aime courir de partout, je cherche une famille sportive pour pouvoir dépenser toute mon énergie. Par contre je n'aime pas les chats !! </p>
-    <!-- Je crée un bouton modal pour que l'utilisateur puisse contacter le refuge pour l'adoption -->
-                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Adopter</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                <h5 itemprop="name" class="card-title">Icetea</h5>
+                  <p itemprop="description" class="card-text">Moi mon nom c'est Icetea, j'ai 8 ans, j'aime courir de partout, je cherche une famille sportive pour pouvoir dépenser toute mon énergie. Par contre je n'aime pas les chats !! </p>
+                <!-- Je crée un bouton modal pour que l'utilisateur puisse contacter le refuge pour l'adoption -->
+                <button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#email">Adopter</button>
+                <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="emailTitle" aria-hidden="true">
+                  <!-- Mise en place de la fenêtre -->
+                  <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
+                      <!-- Classes qui permettent d'en délimiter la structure -->
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title text-dark" id="emailTitle">contact-le-refuge@hotmail.fr</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                          </div>
-                        </form>
+                      <div class="modal-body text-dark">
+                        <p>
+                          Veuillez nous contacter par mail pour une adoption
+                        </p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        <button type="button" class="btn btn-primary">Envoyer message</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
                       </div>
                     </div>
                   </div>
                 </div>
+                
               </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-white bg-primary border-dark mb-3">
-            <img src="../Photos/chien_à_adopter/chien2.png" class="card-img-top" alt="...">
+          <div itemscope itemtype="http://schema.org/Product" class="card text-white bg-primary border-dark mb-3">
+            <img itemprop="image" src="../dossier-images/chien_à_adopter/chien2.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sylverster</h5>
-              <p class="card-text">Bonjour, j'ai été abandonné dès mes 3 ans, je cherche une nouvelle famille. J'adore les balades et me baigner, je suis un fidèle compagnon et j'aime mes congénères</p>
-              <a href="#" class="btn btn-dark">Adopter</a>
+              <h5 itemprop="name" class="card-title">Sylverster</h5>
+              <p itemprop="description" class="card-text">Bonjour, j'ai été abandonné dès mes 3 ans, je cherche une nouvelle famille. J'adore les balades et me baigner, je suis un fidèle compagnon et j'aime mes congénères</p>
+              <!-- Je crée un bouton modal pour que l'utilisateur puisse contacter le refuge pour l'adoption -->
+                <button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#email">Adopter</button>
+                <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="emailTitle" aria-hidden="true">
+                  <!-- Mise en place de la fenêtre -->
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <!-- Classes qui permettent d'en délimiter la structure -->
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="emailTitle">contact-le-refuge@hotmail.fr</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        <p>
+                          Veuillez nous contacter par mail pour une adoption
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-white bg-primary border-dark mb-3">
-            <img src="../Photos/chien_à_adopter/chien3.jpg" class="card-img-top" alt="...">
+          <div itemscope itemtype="http://schema.org/Product" class="card text-white bg-primary border-dark mb-3">
+            <img itemprop="image" src="../dossier-images/chien_à_adopter/chien3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Mednova</h5>
-              <p class="card-text">J'ai 5 ans, je suis joyeuse, j'adore qu'on me brosse et que l'on prenne soin de moi, j'attends avec hâte ma nouvelle famille </p>
-              <a href="#" class="btn btn-dark">Adopter</a>
+              <h5 itemprop="name" class="card-title">Mednova</h5>
+              <p itemprop="description" class="card-text">J'ai 5 ans, je suis joyeuse, j'adore qu'on me brosse et que l'on prenne soin de moi, j'attends avec hâte ma nouvelle famille </p>
+              <!-- Je crée un bouton modal pour que l'utilisateur puisse contacter le refuge pour l'adoption -->
+                <button type="button" class="btn btn-dark text-white" data-toggle="modal" data-target="#email">Adopter</button>
+                <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="emailTitle" aria-hidden="true">
+                  <!-- Mise en place de la fenêtre -->
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <!-- Classes qui permettent d'en délimiter la structure -->
+                      <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="emailTitle">contact-le-refuge@hotmail.fr</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-dark">
+                        <p>
+                          Veuillez nous contacter par mail pour une adoption
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card text-white bg-primary border-dark mb-3">
-            <img src="../Photos/chien_à_adopter/chien4.jpeg" class="card-img-top" alt="...">
+          <div itemscope itemtype="http://schema.org/Product" class="card text-white bg-primary border-dark mb-3">
+            <img itemprop="image" src="../dossier-images/chien_à_adopter/chien4.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">En attente de don</h5>
-              <br></br>
+              <br></br><br></br>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="110" aria-valuemin="0" aria-valuemax="300" style="width: 75%">110/300</div>
               </div>
-              <a href="#" class="btn btn-dark">Adopter</a>
             </div>
           </div>
         </div>
@@ -130,7 +173,7 @@ crossorigin="anonymous">
     </nav>
   </main>
   <footer> 
-    Nous contacter
+    <a href="nous_contacter.html" class="text-white">Nous contacter </a>
   </footer>
   <!-- Script de Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
